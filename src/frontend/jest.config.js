@@ -8,6 +8,11 @@ const config = {
     "html"
   ],
   transform: {},
-  verbose: true // --verbose
+  verbose: true, // --verbose
+
+  testPathIgnorePatterns: [
+    ...defaults.testPathIgnorePatterns,
+    "./tests/e2e/"
+  ]
 };
 export default config;
